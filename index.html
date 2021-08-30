@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="childFlex">
+            <div class="imgBox"></div>
+            <div class="description">User Log in</div>
+            <form>
+                <div class="userBox">
+                    <input type="text" placeholder="User ID" id="inputUserID">
+                </div>
+                <div class="passwordBox">
+                    <input type="password" placeholder="Password" id="inputPassword"> 
+                    <div class="eye" onclick="changeEye()">
+                        <i class="material-icons" id="visibilityOff">visibility_off</i>
+                        <i class="material-icons" id="visibilityOn">visibility</i>
+                    </div>
+                </div>
+                <div class="wrongPassword">Wrong username or password. Try again or click Forgot password to reset it.</div>
+                <div class="logInBtn" onclick="password()">Login</div>
+            </form>
+            <div class="changePassword" onclick="forgotPassword()">
+                Forgot <a href="#">password</a>?
+            </div>
+            <i class="material-icons" id="sadEmoji">sentiment_dissatisfied</i>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

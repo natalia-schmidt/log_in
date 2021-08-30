@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.childFlex {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 450px;
+    background-color: white;
+    border-radius:0.7em;
+    align-items: center;
+}
+
+.imgBox {
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(70, 120, 177);
+    background-image: url("person3.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+.description {
+    margin-top: 25px;
+    margin-bottom: 13px;
+    font-size: 18px;
+    color: rgb(104, 104, 104);
+}
+
+input {
+    background-color: rgb(230, 230, 230);
+    width: 350px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0 13px;
+    font-size: 15px;
+}
+
+.userBox {
+    display: flex;
+    margin: 17px 0;
+}
+
+.passwordBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45px;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+    max-width: 376px;
+    background-color: rgb(230, 230, 230);
+}
+.eye {
+    display: flex;
+    margin-right: 5px;
+    max-width: 25px;
+}
+
+.eye:hover {
+    cursor: pointer;
+}
+
+#visibilityOff {
+    visibility: visible;
+}
+
+#visibilityOn {
+    visibility: hidden;
+    margin-left: -24px
+}
+
+.wrongPassword {
+    display: flex;
+    height: 35px;
+    max-width: 376px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    visibility:hidden;
+    margin: 4px 0;
+}
+
+.logInBtn {
+    display: flex;
+    background-color: rgb(70, 120, 177);
+    width: 376px;
+    height: 45px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logInBtn:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.changePassword {
+    margin-top: 30px;
+    font-size: 14px;
+    color: rgb(104, 104, 104);
+}
+a {
+    text-decoration: none;
+    color: rgb(35, 120, 216)
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#sadEmoji{
+    margin-left: 230px;
+    font-size: 90px;
+    color: rgb(248, 187, 106);
+    margin-top: -42px;
+    opacity: 0;
+    transition-duration: 300ms;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
